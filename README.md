@@ -36,6 +36,10 @@ IntelliJ has built-in support for Gradle. To import your project:
 1. Open a command line interface inside the project directory and run `./gradlew jar` to create a packaged Jar. The Jar file is located at build/libs/seng201_team0-1.0-SNAPSHOT.jar
 2. Navigate to the build/libs/ directory (you can do this with `cd build/libs`)
 3. Run the command `java -jar seng201_team0-1.0-SNAPSHOT.jar` to open the application.
+**Or from git**
+1. Download the BigMoneyRacer.jar to a local dic
+2. Navigate to the dic where the jar file is saved using the terminal
+3. Run the command `java -jar BigMoneyRacer.jar` to open the application.
 
 ## Run Tests
 1. Open a command line interface inside the project directory and run `./gradlew test` to run the tests.
