@@ -5,6 +5,9 @@ or play it safe and settle for a smaller share of the prize pool. Unpredictable 
 or reward the player. Along the way, meet quirky characters, each revealing fragments of the drivers purpose. The
 ultimate measure of a racers success is the money earned by the end of the season... and  sometimes, simply surviving it.
 
+
+**See how the game plays on youtube:** https://youtu.be/xt3E5zvBL4w?si=HtH_IfccCtWc48ID
+
 ## What's Included
 This project comes with some basic examples of the following (including dependencies in the build.gradle file):
 - JavaFX
