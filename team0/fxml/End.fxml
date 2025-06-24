@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.EndController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/EndFX/Background.png" />
+         </image></ImageView>
+      <Label layoutX="250.0" layoutY="67.0" text="Career Summary">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPlayerName" layoutX="280.0" layoutY="173.0" text="Player name:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelSeasonLength" layoutX="280.0" layoutY="220.0" text="Season Length:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelRacesCompleted" layoutX="280.0" layoutY="277.0" text="Races Completed:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelAveragePlacing" layoutX="280.0" layoutY="334.0" text="Average placings:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelTotalWinnings" layoutX="281.0" layoutY="441.0" text="Total winnings:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="buttonQuit" layoutX="646.0" layoutY="541.0" mnemonicParsing="false" onAction="#buttonQuitPressed" prefHeight="35.0" prefWidth="130.0" text="Done" />
+      <Label fx:id="labelTotalPressed" layoutX="280.0" layoutY="386.0" text="Total Reaction Button Pressed:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.RaceController">
+   <children>
+      <ImageView fitHeight="608.0" fitWidth="807.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RaceFX/World.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="raceInfo" editable="false" layoutX="25.0" layoutY="436.0" prefHeight="139.0" prefWidth="200.0" promptText="Race Info" wrapText="true" />
+      <Button fx:id="buttonToSelectedRace" layoutX="502.0" layoutY="552.0" mnemonicParsing="false" onAction="#buttonToSelectedRacePressed" prefHeight="35.0" prefWidth="130.0" text="Go" />
+      <Button fx:id="buttonToMenu" layoutX="652.0" layoutY="552.0" mnemonicParsing="false" onAction="#buttonToMenuPressed" prefHeight="35.0" prefWidth="130.0" text="Back" />
+      <ImageView fx:id="buttonToAmerica" fitHeight="30.0" fitWidth="30.0" layoutX="106.0" layoutY="294.0" onMouseClicked="#buttonToAmericaPressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RaceFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonToEurope" fitHeight="30.0" fitWidth="30.0" layoutX="375.0" layoutY="213.0" onMouseClicked="#buttonToEuropePressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RaceFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonToJapan" fitHeight="30.0" fitWidth="30.0" layoutX="662.0" layoutY="262.0" onMouseClicked="#buttonToJapanPressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RaceFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" text="Select a race (Click on race, confirm with Go):" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSeasonProgress" layoutX="246.0" layoutY="547.0" text="Season Progress" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="labelPlayerMoney" layoutX="246.0" layoutY="515.0" prefHeight="19.0" prefWidth="255.0" text="Player Money" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

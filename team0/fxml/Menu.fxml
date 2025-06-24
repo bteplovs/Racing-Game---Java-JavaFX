@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.MenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/MenuFX/BackgroundMenu.png" />
+         </image></ImageView>
+      <Button fx:id="buttonToRace" layoutX="43.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonToRacePressed" prefHeight="71.0" prefWidth="225.0" text="Race" />
+      <ImageView fx:id="imageSelectedVehicle" fitHeight="275.0" fitWidth="464.0" layoutX="63.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="buttonToShop" layoutX="288.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonToShopPressed" prefHeight="71.0" prefWidth="225.0" text="Shop" />
+      <Button fx:id="buttonToGarage" layoutX="533.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonToGaragePressed" prefHeight="71.0" prefWidth="225.0" text="Garage" />
+      <ImageView fitHeight="206.0" fitWidth="412.0" layoutX="195.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/MenuFX/GameTitle.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

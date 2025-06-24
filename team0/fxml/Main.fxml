@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.MainController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@../Assets/MainFX/RedLight.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playImage" fitHeight="191.0" fitWidth="382.0" layoutX="192.0" layoutY="358.0" onMouseEntered="#OnMouseEnteredPlay" onMouseExited="#OnMouseExitedPlay" onMousePressed="#OnMousePressedPlay" onMouseReleased="#OnMouseReleasedPlay" pickOnBounds="true" preserveRatio="true" rotate="10.0">
+         <image>
+            <Image url="@../Assets/MainFX/PlayBlue.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

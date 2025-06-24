@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.PickCarController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/ShopFX/ShopBackground.png" />
+         </image></ImageView>
+      <ImageView fx:id="imageDefaultCar" fitHeight="355.0" fitWidth="603.0" layoutX="109.0" layoutY="104.0" onMouseClicked="#buyCar" onScroll="#changeCar" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelPlayerMoney" layoutX="559.0" layoutY="17.0" prefHeight="21.0" prefWidth="227.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="carStats" editable="false" layoutX="109.0" layoutY="447.0" prefHeight="129.0" prefWidth="275.0" promptText="Car stats" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="buttonJoin" layoutX="636.0" layoutY="541.0" mnemonicParsing="false" onAction="#onJoinPressed" prefHeight="35.0" prefWidth="130.0" text="Join" />
+      <Label layoutX="14.0" layoutY="14.0" text="Purchase your First Cars (click to select, scroll to browse):" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

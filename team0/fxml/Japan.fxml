@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.RouteController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RoutesFX/Japan.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="routeInfo" editable="false" layoutX="25.0" layoutY="375.0" prefHeight="200.0" prefWidth="300.0" promptText="Route Info" wrapText="true" />
+      <ImageView fx:id="buttonRouteThree" fitHeight="30.0" fitWidth="30.0" layoutX="370.0" layoutY="427.0" onMouseClicked="#buttonRouteThreePressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RoutesFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonRouteOne" fitHeight="30.0" fitWidth="30.0" layoutX="541.0" layoutY="300.0" onMouseClicked="#buttonRouteOnePressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RoutesFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonRouteTwo" fitHeight="30.0" fitWidth="30.0" layoutX="491.0" layoutY="412.0" onMouseClicked="#buttonRouteTwoPressed" onMouseEntered="#changeColourYellow" onMouseExited="#changeColourRed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/RoutesFX/RedButton.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="raceName" layoutX="25.0" layoutY="14.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRace" layoutX="506.0" layoutY="551.0" mnemonicParsing="false" onAction="#beginRace" prefHeight="35.0" prefWidth="130.0" text="Race!" />
+      <Button fx:id="buttonToMenu" layoutX="656.0" layoutY="551.0" mnemonicParsing="false" onAction="#buttonToRacePressed" prefHeight="35.0" prefWidth="130.0" text="Back" />
+      <Label layoutX="14.0" layoutY="14.0" text="Select a Route (Click on Route, start race with Race!) :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSeasonProgress" layoutX="25.0" layoutY="338.0" text="Season Progress" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPlayerMoney" layoutX="25.0" layoutY="302.0" prefHeight="19.0" prefWidth="300.0" text="Player Money" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

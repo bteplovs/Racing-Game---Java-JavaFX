@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.GameController">
+   <children>
+      <ImageView fx:id="ImageViewBackground" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/GameFX/RaceBackground.png" />
+         </image></ImageView>
+      <ListView fx:id="leaderboardListView" fixedCellSize="70.0" layoutX="147.0" layoutY="97.0" mouseTransparent="true" prefHeight="341.0" prefWidth="506.0" VBox.vgrow="ALWAYS" />
+      <Label fx:id="labelCurrentDistance" layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="205.0" text="Distance :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="labelCurrentTime" layoutX="348.0" layoutY="48.0" prefHeight="17.0" prefWidth="157.0" text="Current Time:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ProgressBar fx:id="progressDistance" layoutX="194.0" layoutY="20.0" prefHeight="18.0" prefWidth="412.0" progress="0.0" />
+      <ImageView fx:id="imageViewSpeedDial" fitHeight="210.0" fitWidth="230.0" layoutX="-15.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/GameFX/SpeedDefault.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonSpeedUp" fitHeight="120.0" fitWidth="120.0" layoutX="342.0" layoutY="451.0" onMouseClicked="#buttonSpeedUpPressed" onMousePressed="#peddleDownAccelerate" onMouseReleased="#peddleUpAccelerate" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/GameFX/AccelerateUp.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="buttonSlowDown" fitHeight="120.0" fitWidth="120.0" layoutX="193.0" layoutY="451.0" onMouseClicked="#buttonSlowDownPressed" onMousePressed="#peddleDownBreak" onMouseReleased="#peddleUpBreak" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/GameFX/BreakUp.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imageViewFuelCan" fitHeight="172.0" fitWidth="230.0" layoutX="638.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/GameFX/Fuel100%25.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonStartCar" layoutX="546.0" layoutY="488.0" mnemonicParsing="false" onAction="#buttonStartCarPressed" prefHeight="66.0" prefWidth="82.0" text="Start car" />
+      <Label fx:id="labelTimePenalty" layoutX="496.0" layoutY="48.0" prefHeight="17.0" prefWidth="109.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPlayerMoney" layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="179.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="reactionButton" layoutX="480.0" layoutY="490.0" onMouseClicked="#handleReactionButtonClick" prefHeight="66.0" prefWidth="120.0" text="React!" visible="false" />
+   </children>
+</AnchorPane>

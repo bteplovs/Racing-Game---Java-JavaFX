@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.util.Dialogue.DialogueController">
+   <children>
+      <ImageView fx:id="npcPortrait" fitHeight="128.0" fitWidth="128.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="dialogueTextArea" editable="false" layoutX="153.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="380.0" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="nextButton" layoutX="543.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Next" />
+   </children>
+</AnchorPane>
